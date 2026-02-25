@@ -28,7 +28,7 @@ export default function Home() {
         </video>
 
         {/* Dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* Content overlay */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 mx-auto">
