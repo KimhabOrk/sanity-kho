@@ -9,7 +9,7 @@ export default function TermsPage() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <main className="min-h-screen bg-black py-20 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-black py-20 px-4 md:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Terms & Conditions</h1>
         <p className="text-white/60 mb-12">
@@ -100,12 +100,6 @@ export default function TermsPage() {
               .
             </p>
           </section>
-        </div>
-
-        <div className="mt-16 pt-12 border-t border-white/10">
-          <p className="text-white/60 text-sm">
-            &copy; {currentYear} Kimhab Ork. All rights reserved.
-          </p>
         </div>
       </div>
     </main>

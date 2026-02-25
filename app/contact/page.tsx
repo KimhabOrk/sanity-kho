@@ -61,7 +61,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="min-h-screen bg-black py-20 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-black py-20 px-4 md:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -72,9 +72,9 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <div className="bg-gray-800/80 px-4 md:px-6 py-6 md:px-8 rounded-xl">
-          <h2 className="text-2xl font-bold text-foreground mb-6">
-            Send us a message
+        <div className="bg-gray-900/80 px-6 md:px-8 py-8 md:py-10 rounded-xl">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-6">
+            Send Us A Message
           </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -171,7 +171,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Info */}
-        <div className="mt-16 pt-12 border-t border-white/40">
+        <div className="mt-16 pt-12 border-t border-white/20">
           <h3 className="text-lg font-semibold text-white mb-6">Other ways to connect</h3>
           <div className="space-y-4 text-white/70">
             <p>We typically respond to messages within 24-48 hours.</p>

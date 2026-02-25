@@ -9,7 +9,7 @@ export default function PrivacyPage() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <main className="min-h-screen bg-black py-20 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-black py-20 px-4 md:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Privacy Policy</h1>
         <p className="text-white/60 mb-12">
@@ -99,12 +99,6 @@ export default function PrivacyPage() {
               We may update this Privacy Policy from time to time. The updated version will be indicated by an updated "Last updated" date, and the updated version will be effective as soon as it is accessible.
             </p>
           </section>
-        </div>
-
-        <div className="mt-16 pt-12 border-t border-white/10">
-          <p className="text-white/60 text-sm">
-            &copy; {currentYear} Kimhab Ork. All rights reserved.
-          </p>
         </div>
       </div>
     </main>

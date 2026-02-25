@@ -87,7 +87,7 @@ export default async function LookbookDetailPage({ params }: LookbookDetailProps
   })
 
   return (
-    <main className="min-h-screen bg-black py-20 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-black py-20 px-4 md:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Back Button */}
         <Link

@@ -45,10 +45,10 @@ export function Navbar() {
       
       {/* Content */}
       <div className="relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center h-full py-3">
+            <Link href="/" className="flex items-center h-full py-1">
               <Image 
                 src="https://kimhabork.site/logo-dark.png"
                 width={128}
