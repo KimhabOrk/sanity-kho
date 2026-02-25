@@ -1,12 +1,6 @@
-import { Metadata } from 'next'
 import { sanityServerClient } from '@/lib/sanity.client'
 import { projectsQuery } from '@/lib/queries'
 import { Card } from '@/components/Card'
-
-export const metadata: Metadata = {
-  title: 'Projects - Kimhab Ork',
-  description: 'Explore artistic fashion collections and design projects by Kimhab Ork.',
-}
 
 interface ProjectItem {
   _id: string

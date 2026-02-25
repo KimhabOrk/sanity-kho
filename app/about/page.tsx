@@ -18,7 +18,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <section className="container relative p-6 max-w-4xl mb-10 md:mb-16">
+        <section className="container relative px-4 md:px-6 max-w-4xl mb-10 md:mb-16">
           <div className="flex mx-auto justify-center items-center aspect-square shandow-2xl">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/lv_0_20260205133647.jpg" 
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <p>
               Her approach emphasizes:
             </p>
-            <ul className="list-disc list-inside space-y-3 ml-4">
+            <ul className="list-disc list-inside list-primary space-y-3 ml-3">
               <li><span className="text-white">Precision Craftsmanship:</span> Meticulous attention to construction and material quality</li>
               <li><span className="text-white">Conceptual Depth:</span> Collections grounded in meaningful narratives and artistic concepts</li>
               <li><span className="text-white">Innovation:</span> Continuous exploration of new techniques and materials</li>
@@ -73,11 +73,11 @@ export default function AboutPage() {
         <section className="border-t border-white/10 pt-12">
           <h2 className="text-2xl font-bold text-white mb-4">Get in Touch</h2>
           <p className="text-white/80 mb-6">
-            Interested in collaborating or learning more? We'd love to hear from you.
+            Interested in learning more about KIMHAB ORK? We'd love to hear from you.
           </p>
           <a
             href="/contact"
-            className="inline-block px-8 py-3 bg-white text-black font-semibold hover:bg-white/90 transition-colors"
+            className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold hover:bg-white hover:text-primary transition-colors rounded-xl"
           >
             Contact Kimhab
           </a>

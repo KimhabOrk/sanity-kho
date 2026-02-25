@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const heroVideo = 'https://ik.imagekit.io/kimhabork/assets/video/2026-02-01-133634421.mp4'
-
+  
   return (
     <section className="w-full max-h-screen h-screen relative bg-black overflow-hidden">
       {/* Background video */}
@@ -32,19 +32,19 @@ export default function Home() {
         {/**<h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter">
           Kimhab Ork
         </h1>**/}
-        <div className="flex h-full justify-center items-center mx-auto">
+        <div className="flex w-full justify-center items-center mx-auto">
           <Image 
-            src="https://ik.imagekit.io/kimhabork/assets/kho.png"
+            src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
             width={800}
             height={184}
             priority
             alt="logo"
-            className="h-auto w-full object-cover" 
+            className="h-[184px] md:h-[244px] w-full object-cover mb-4 md:mb-6" 
           />
-        </div>
-        <p className="text-lg md:text-2xl text-white/80 max-w-2xl">
+        <p className="text-lg md:text-2xl text-white uppercase max-w-2xl">
           Blending Artistry with Commercial Excellence
         </p>
+        </div>
       </div>
     </section>
   )

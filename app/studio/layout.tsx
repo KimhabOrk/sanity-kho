@@ -1,5 +1,6 @@
 export const metadata = {
-  title: 'Sanity Studio | Kimhab Ork',
+  title: 'Sanity Studio | Kimhab Ork Content Management',
+  description: "Content management for Kimhab Ork digital asset management",
 }
 
 export default function StudioLayout({
@@ -7,5 +8,12 @@ export default function StudioLayout({
 }: {
   children: React.ReactNode
 }) {
-  return children
+  return (
+    <html>
+      <head>
+        <meta name="robots" content="noindex" />
+      </head>
+      <body>{children}</body>
+    </html>
+  )
 }

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Metadata } from 'next'
 
 export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false)
@@ -73,6 +72,11 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
+        <div className="bg-muted p-4 md:p-6">
+          <h2 className="text-2xl font-bold text-foreground mb-6">
+            Send us a message
+          </h2>
+
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name Field */}
           <div>
@@ -86,7 +90,7 @@ export default function ContactPage() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
               placeholder="Your name"
             />
           </div>
@@ -103,7 +107,7 @@ export default function ContactPage() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
               placeholder="your@email.com"
             />
           </div>
@@ -120,7 +124,7 @@ export default function ContactPage() {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
               placeholder="What's this about?"
             />
           </div>
@@ -137,7 +141,7 @@ export default function ContactPage() {
               onChange={handleChange}
               required
               rows={6}
-              className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors resize-none"
+              className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors resize-none"
               placeholder="Your message here..."
             />
           </div>
@@ -159,14 +163,15 @@ export default function ContactPage() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full px-8 py-3 bg-white text-black font-semibold hover:bg-white/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-xl font-semibold hover:bg-black disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {isLoading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
+        </div>
 
         {/* Contact Info */}
-        <div className="mt-16 pt-12 border-t border-white/10">
+        <div className="mt-16 pt-12 border-t border-white/40">
           <h3 className="text-lg font-semibold text-white mb-6">Other ways to connect</h3>
           <div className="space-y-4 text-white/70">
             <p>We typically respond to messages within 24-48 hours.</p>
