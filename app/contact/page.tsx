@@ -65,7 +65,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-black py-20 px-4 md:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -77,7 +77,7 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="bg-gray-700/90 px-5 md:px-8 py-7 md:py-10 rounded-xl">
             <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6 md:mb-8">
               Send Us A Message
