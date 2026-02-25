@@ -72,7 +72,7 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <div className="bg-gray-900/85 px-5 md:px-8 py-8 md:py-10 rounded-xl">
+        <div className="bg-gray-700/80 px-5 md:px-8 py-7 md:py-10 rounded-xl">
           <h2 className="text-xl md:text-3xl font-bold text-foreground mb-7 md:mb-9">
             Send Us A Message
           </h2>
@@ -80,7 +80,7 @@ export default function ContactPage() {
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name Field */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+            <label htmlFor="name" className="block text-sm font-medium text-white mb-3">
               Name
             </label>
             <input
@@ -97,7 +97,7 @@ export default function ContactPage() {
 
           {/* Email Field */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+            <label htmlFor="email" className="block text-sm font-medium text-white mb-3">
               Email
             </label>
             <input
@@ -114,7 +114,7 @@ export default function ContactPage() {
 
           {/* Subject Field */}
           <div>
-            <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
+            <label htmlFor="subject" className="block text-sm font-medium text-white mb-3">
               Subject
             </label>
             <input
@@ -131,7 +131,7 @@ export default function ContactPage() {
 
           {/* Message Field */}
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+            <label htmlFor="message" className="block text-sm font-medium text-white mb-3">
               Message
             </label>
             <textarea

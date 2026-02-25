@@ -99,7 +99,7 @@ export function Navbar() {
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden border-t border-white/40 pb-4 space-y-3">
+            <div className="md:hidden border-t border-white/40 pb-4 pt-2 space-y-2">
               <Link
                 href="/projects"
                 className="block text-white/80 hover:text-white transition-colors py-2 text-sm font-medium"
