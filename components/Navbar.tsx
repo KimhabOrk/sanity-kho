@@ -46,16 +46,16 @@ export function Navbar() {
       {/* Content */}
       <div className="relative">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-14">
             {/* Logo */}
             <Link href="/" className="flex items-center h-full py-1">
               <Image 
                 src="https://kimhabork.site/logo-dark.png"
                 width={128}
-                height={29}
+                height={34}
                 priority
                 alt="logo"
-                className="h-[28px] w-full md:h-[34px] object-cover" 
+                className="h-[34px] w-full md:h-[40px] object-cover" 
               />
             </Link>
 
@@ -93,13 +93,13 @@ export function Navbar() {
               className="md:hidden text-white hover:text-white/80 transition-colors"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden pb-4 space-y-2">
+            <div className="md:hidden border-t border-white/40 pb-4 space-y-2">
               <Link
                 href="/projects"
                 className="block text-white/80 hover:text-white transition-colors py-2 text-sm font-medium"

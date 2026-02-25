@@ -45,9 +45,9 @@ export default function Home() {
               height={184}
               priority
               alt="logo"
-              className="h-full w-full object-contain mb-3 md:mb-6"
+              className="h-full w-full object-cover mb-3 md:mb-6"
             />
-            <p className="text-xl md:text-2xl text-white uppercase max-w-2xl">
+            <p className="text-lg md:text-2xl text-white uppercase max-w-2xl">
               Blending Artistry with Commercial Excellence
             </p>
           </div>
