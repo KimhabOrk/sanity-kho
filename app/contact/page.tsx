@@ -72,8 +72,8 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <div className="bg-gray-950/70 px-5 md:px-8 py-8 md:py-10 rounded-xl">
-          <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
+        <div className="bg-gray-950/85 px-5 md:px-8 py-8 md:py-10 rounded-xl">
+          <h2 className="text-xl md:text-3xl font-bold text-foreground mb-7 md:mb-9">
             Send Us A Message
           </h2>
 

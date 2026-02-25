@@ -38,11 +38,11 @@ export default function Home() {
           {/**<h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter">
           Kimhab Ork
         </h1>**/}
-          <div className="flex flex-col w-full justify-center items-center mx-auto px-4 md:px-6">
+          <div className="flex flex-col w-full justify-center items-center mx-auto px-2 md:px-4">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
               width={800}
-              height={184}
+              height={194}
               priority
               alt="logo"
               className="h-full w-full object-cover mb-3 md:mb-6"
