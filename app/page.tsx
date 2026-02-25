@@ -20,7 +20,7 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-screen object-cover"
           poster="/poster.jpeg"
         >
           <source src={heroVideo} type="video/mp4" />
@@ -53,7 +53,7 @@ export default function Home() {
               <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 {/* Bottom */}
                 <div className="pt-4">
-                  <div className="flex gap-6 md:gap-10 justify-center items-center mx-auto mb-4">
+                  <div className="flex gap-6 md:gap-10 justify-center items-center mx-auto mb-3">
                     <Link href="https://facebook.com/kimhab.ork.kh">
                       <Facebook
                         size={24}
@@ -73,7 +73,7 @@ export default function Home() {
                       />
                     </Link>
                   </div>
-                  <div className="flex flex-col justify-between items-center gap-4">
+                  <div className="flex flex-col justify-between items-center gap-3">
                     <p className="text-white text-sm">
                       &copy; {currentYear} Kimhab Ork. All rights reserved.
                     </p>
