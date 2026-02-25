@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Kimhab Ork - Fashion Designer',
-  description: 'Explore artistic collections and commercial lookbooks by Kimhab Ork, a visionary fashion designer blending artistry with commercial excellence.',
+  description: 'Discover the artistic collections, creative projects and commercial lookbooks by Kimhab Ork, a visionary fashion designer blending artistry with commercial excellence.',
   icons: {
     shortcut: { url: "/favicon.ico", type: "image/x-icon" },
     icon: [

@@ -1,17 +1,14 @@
-import { Metadata } from "next";
+'use client'
+
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+import Link from 'next/link'
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: "Kimhab Ork - Fashion Designer",
-  description:
-    "Discover the artistic and commercial world of Kimhab Ork's fashion designs.",
-};
 
 export default function Home() {
-  const heroVideo =
-    "https://ik.imagekit.io/kimhabork/assets/video/2026-02-01-133634421.mp4";
+  const currentYear = new Date().getFullYear()
+  const heroVideo = "https://ik.imagekit.io/kimhabork/assets/video/VE20260226015538.mp4";
 
   return (
     <>
@@ -51,9 +48,56 @@ export default function Home() {
               Blending Artistry with Commercial Excellence
             </p>
           </div>
+          <div className="fixed bottom-0 right-0 left-0 w-full z-20">
+            <div className="py-6 md:py-10 w-full">
+              <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+                {/* Bottom */}
+                <div className="pt-4">
+                  <div className="flex gap-6 md:gap-10 justify-center items-center mx-auto mb-4">
+                    <Link href="https://facebook.com/kimhab.ork.kh">
+                      <Facebook
+                        size={24}
+                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary"
+                      />
+                    </Link>
+                    <Link href="https://instagram.com/kimhab_ork">
+                      <Instagram
+                        size={24}
+                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary"
+                      />
+                    </Link>
+                    <Link href="https://linkedin.com/in/kimhab-ork">
+                      <Linkedin
+                        size={24}
+                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary"
+                      />
+                    </Link>
+                  </div>
+                  <div className="flex flex-col justify-between items-center gap-4">
+                    <p className="text-white text-sm">
+                      &copy; {currentYear} Kimhab Ork. All rights reserved.
+                    </p>
+                    <div className="flex justify-center items-center mx-auto gap-4">
+                      <Link
+                        href="/privacy"
+                        className="text-white hover:text-white text-sm transition-colors"
+                      >
+                        Privacy Policy
+                      </Link>
+                      <Link
+                        href="/terms"
+                        className="text-white hover:text-white text-sm transition-colors"
+                      >
+                        Terms & Conditions
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
