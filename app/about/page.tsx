@@ -12,13 +12,13 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Kimhab Ork</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 uppercase">Kimhab Ork</h1>
           <p className="text-lg text-white/60">
             Fashion designer. Visionary. Creator.
           </p>
         </div>
 
-        <section className="container relative px-4 md:px-6 max-w-4xl mb-10 md:mb-16">
+        <section className="container relative max-w-4xl mb-10 md:mb-16">
           <div className="flex mx-auto justify-center items-center aspect-square shandow-2xl">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/lv_0_20260205133647.jpg" 

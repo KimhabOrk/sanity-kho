@@ -55,7 +55,7 @@ export function Navbar() {
                 height={29}
                 priority
                 alt="logo"
-                className="h-full w-[128px] md:w-[168px] object-cover" 
+                className="h-[28px] w-full md:h-[34px] object-cover" 
               />
             </Link>
 

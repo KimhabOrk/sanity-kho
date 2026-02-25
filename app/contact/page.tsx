@@ -72,7 +72,7 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <div className="bg-muted p-4 md:p-6">
+        <div className="bg-gray-800/80 px-4 md:px-6 py-6 md:px-8 rounded-xl">
           <h2 className="text-2xl font-bold text-foreground mb-6">
             Send us a message
           </h2>
