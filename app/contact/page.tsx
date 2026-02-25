@@ -62,7 +62,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-black py-20 px-4 md:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-screen mx-auto">
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact</h1>
@@ -70,8 +70,10 @@ export default function ContactPage() {
             Have a question or collaboration opportunity? Let's connect.
           </p>
         </div>
+        </div>
 
         {/* Form */}
+        <div className="max-w-2xl mx-auto">
         <div className="bg-gray-700/90 px-5 md:px-8 py-7 md:py-10 rounded-xl">
           <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6 md:mb-8">
             Send Us A Message
@@ -171,12 +173,14 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Info */}
+        <div className="max-w-screen mx-auto">
         <div className="mt-16 pt-12 border-t border-white/20">
           <h3 className="text-lg font-semibold text-white mb-6">Other ways to connect</h3>
           <div className="space-y-4 text-white/70">
             <p>We typically respond to messages within 24-48 hours.</p>
             <p>For press inquiries and collaboration opportunities, please reach out through the form above.</p>
           </div>
+        </div>
         </div>
       </div>
     </main>

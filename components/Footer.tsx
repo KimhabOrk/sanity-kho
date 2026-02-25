@@ -11,7 +11,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Bottom */}
         <div className="pt-4">
-          <div className="flex gap-4 justify-center items-center mx-auto mb-4">
+          <div className="flex gap-6 md:gap-10 justify-center items-center mx-auto mb-4">
             <Link href="https://facebook.com/kimhab.ork.kh">
               <Facebook size={24} className="h-6 w-6 md:h-8 md:w-8 text-white/60 hover:text-primary" />
             </Link>
