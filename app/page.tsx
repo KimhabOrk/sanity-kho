@@ -20,7 +20,7 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-screen object-cover"
+          className="absolute inset-0 w-full h-screen object-cover md:object-top lg:object-top"
           poster="/poster.jpeg"
         >
           <source src={heroVideo} type="video/mp4" />
