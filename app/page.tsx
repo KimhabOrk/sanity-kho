@@ -1,47 +1,53 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Navbar from "@/components/Navigation";
-import Link from 'next/link'
-import { Instagram, Facebook, Linkedin } from 'lucide-react';
+import Link from "next/link";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 export default function Home() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-black">
-      <Navbar transparent={true} />
       <section className="w-full h-screen relative overflow-hidden">
         {/* Background video */}
         <div className="absolute inset-0">
           <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-screen object-cover md:hidden lg:hidden"
-          poster="https://ik.imagekit.io/kimhabork/assets/poster-mobile.jpg?updatedAt=1772289204429"
-        >
-          <source src="https://ik.imagekit.io/kimhabork/assets/video/VE20260226015538.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-screen object-cover hidden md:block lg:block"
-          poster="https://ik.imagekit.io/kimhabork/assets/poster-desktop.jpeg?updatedAt=1772289275320"
-        >
-          <source src="https://ik.imagekit.io/kimhabork/assets/video/VID_20260213225836.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-        {/* Dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/40" />
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-screen object-cover md:hidden lg:hidden"
+            poster="https://ik.imagekit.io/kimhabork/assets/poster-mobile.jpg?updatedAt=1772289204429"
+          >
+            <source
+              src="https://ik.imagekit.io/kimhabork/assets/video/VE20260226015538.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-screen object-cover hidden md:block lg:block"
+            poster="https://ik.imagekit.io/kimhabork/assets/poster-desktop.jpeg?updatedAt=1772289275320"
+          >
+            <source
+              src="https://ik.imagekit.io/kimhabork/assets/video/VID_20260213225836.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Dark overlay for better text contrast */}
+          <div className="absolute inset-0 bg-black/40" />
         </div>
-        
+        <Navbar transparent={true} />
+
         {/* Content overlay */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 mx-auto">
           {/**<h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter">
@@ -85,13 +91,13 @@ export default function Home() {
                       />
                     </Link>
                     <Link href="https://tiktok.com/@">
-                      <Image 
+                      <Image
                         src="/tiktok.png"
                         width={24}
                         height={24}
                         alt="TikTok Logo"
                         priority
-                        className="h-6 w-6 md:h-8 md:w-8 object-cover" 
+                        className="h-6 w-6 md:h-8 md:w-8 object-cover"
                       />
                     </Link>
                     <Link href="https://www.pinterest.com/kimhab_ork">
@@ -101,7 +107,7 @@ export default function Home() {
                         height={24}
                         alt="Pinterest Logo"
                         priority
-                        className="h-6 w-6 md:h-8 md:w-8 object-cover" 
+                        className="h-6 w-6 md:h-8 md:w-8 object-cover"
                       />
                     </Link>
                     <Link href="https://www.threads.com/@kimhab_ork">
@@ -111,7 +117,7 @@ export default function Home() {
                         height={24}
                         alt="Threads Logo"
                         priority
-                        className="h-6 w-6 md:h-8 md:w-8 object-contain" 
+                        className="h-6 w-6 md:h-8 md:w-8 object-contain"
                       />
                     </Link>
                   </div>
