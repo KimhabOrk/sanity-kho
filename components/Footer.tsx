@@ -58,7 +58,7 @@ export function Footer() {
                 height={24}
                 alt="Threads Logo"
                 priority
-                className="h-6 w-6 md:h-8 md:w-8 object-cover"
+                className="h-6 w-6 md:h-8 md:w-8 object-contain"
               />
             </Link>
           </div>

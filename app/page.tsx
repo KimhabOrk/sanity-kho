@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/Navigation";
 import Link from 'next/link'
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 
@@ -111,7 +111,7 @@ export default function Home() {
                         height={24}
                         alt="Threads Logo"
                         priority
-                        className="h-6 w-6 md:h-8 md:w-8 object-cover" 
+                        className="h-6 w-6 md:h-8 md:w-8 object-contain" 
                       />
                     </Link>
                   </div>
