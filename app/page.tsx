@@ -47,7 +47,7 @@ export default function Home() {
           {/**<h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter">
           Kimhab Ork
         </h1>**/}
-          <div className="flex flex-col w-full justify-center items-center mx-auto px-2 md:px-4">
+          <div className="flex flex-col w-full justify-center items-center mx-auto px-2 md:px-6">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
               width={800}
