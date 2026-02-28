@@ -77,7 +77,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
 
         {/* Mobile Navigation - Animated Dropdown */}
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-white/40 animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="md:hidden pb-4 pt-2 border-t border-white/40 animate-in fade-in slide-in-from-top-2 duration-200">
             {navItems.map((item) => (
               <Link
                 key={item.href}
