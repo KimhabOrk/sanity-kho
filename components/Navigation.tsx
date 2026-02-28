@@ -30,9 +30,6 @@ export default function Navbar({ transparent = false }: NavbarProps) {
         // Mobile menu closed: transparent
         return 'bg-transparent border-transparent'
       }
-    } else {
-      // Other pages: black with blur and lower opacity
-      return 'bg-black/30 backdrop-blur-md border-b border-neutral-800/50'
     }
   }
 
