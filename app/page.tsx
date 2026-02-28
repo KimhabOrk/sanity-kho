@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import Link from 'next/link'
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
-import { Threads, TikTok, Pinterest } from "@/components/icons";
 
 export default function Home() {
   const currentYear = new Date().getFullYear()
@@ -66,41 +65,53 @@ export default function Home() {
               <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 {/* Bottom */}
                 <div className="pt-4">
-                  <div className="flex gap-6 md:gap-10 justify-center items-center mx-auto mb-3">
+                  <div className="flex gap-6 md:gap-8 justify-center items-center mx-auto mb-3">
                     <Link href="https://facebook.com/kimhab.ork.kh">
                       <Facebook
                         size={24}
-                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary"
+                        className="h-6 w-6 md:h-8 md:w-8 text-white"
                       />
                     </Link>
                     <Link href="https://instagram.com/kimhab_ork">
                       <Instagram
                         size={24}
-                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary"
+                        className="h-6 w-6 md:h-8 md:w-8 text-white"
                       />
                     </Link>
                     <Link href="https://linkedin.com/in/kimhab-ork">
                       <Linkedin
                         size={24}
-                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary"
+                        className="h-6 w-6 md:h-8 md:w-8 text-white"
                       />
                     </Link>
                     <Link href="https://tiktok.com/@">
-                      <TikTok 
-                        size={24}
-                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary" 
+                      <Image 
+                        src="/tiktok.png"
+                        width={24}
+                        height={24}
+                        alt="TikTok Logo"
+                        priority
+                        className="h-6 w-6 md:h-8 md:w-8 object-cover" 
                       />
                     </Link>
                     <Link href="https://www.pinterest.com/kimhab_ork">
-                      <Pinterest
-                        size={24}
-                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary" 
+                      <Image
+                        src="/pinterest.png"
+                        width={24}
+                        height={24}
+                        alt="Pinterest Logo"
+                        priority
+                        className="h-6 w-6 md:h-8 md:w-8 object-cover" 
                       />
                     </Link>
                     <Link href="https://www.threads.com/@kimhab_ork">
-                      <Threads
-                        size={24}
-                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary" 
+                      <Image
+                        src="/threads.png"
+                        width={24}
+                        height={24}
+                        alt="Threads Logo"
+                        priority
+                        className="h-6 w-6 md:h-8 md:w-8 object-cover" 
                       />
                     </Link>
                   </div>
