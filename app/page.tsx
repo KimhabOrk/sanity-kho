@@ -47,7 +47,7 @@ export default function Home() {
           {/**<h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter">
           Kimhab Ork
         </h1>**/}
-          <div className="flex flex-col w-full justify-center items-center mx-auto px-2 md:px-10">
+          <div className="flex flex-col w-full justify-center items-center mx-auto px-2 md:px-4">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
               width={800}
@@ -56,7 +56,7 @@ export default function Home() {
               alt="logo"
               className="h-full w-full object-cover mb-3 md:mb-8"
             />
-            <p className="text-lg md:text-3xl lg:text-5xl text-white uppercase max-w-2xl">
+            <p className="text-lg md:text-2xl lg:text-3xl text-white uppercase max-w-6xl mb-3 md:mb-8">
               Blending Artistry with Commercial Excellence
             </p>
           </div>
