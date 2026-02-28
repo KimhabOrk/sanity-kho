@@ -4,32 +4,45 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import Link from 'next/link'
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
-
+import { Threads, TikTok, Pinterest } from "@/components/icons";
 
 export default function Home() {
   const currentYear = new Date().getFullYear()
-  const heroVideo = "https://ik.imagekit.io/kimhabork/assets/video/VE20260226015538.mp4";
 
   return (
-    <>
+    <div className="min-h-screen bg-black">
       <Navbar />
-      <section className="w-full max-h-screen h-screen relative bg-black overflow-hidden">
+      <section className="w-full h-screen relative overflow-hidden">
         {/* Background video */}
+        <div className="absolute inset-0">
+          <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-screen object-cover md:hidden lg:hidden"
+          poster="https://ik.imagekit.io/kimhabork/assets/poster-mobile.jpg?updatedAt=1772289204429"
+        >
+          <source src="https://ik.imagekit.io/kimhabork/assets/video/VE20260226015538.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-screen object-cover md:object-top lg:object-top"
-          poster="/poster.jpeg"
+          className="w-full h-screen object-cover hidden md:block lg:block"
+          poster="https://ik.imagekit.io/kimhabork/assets/poster-desktop.jpeg?updatedAt=1772289275320"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source src="https://ik.imagekit.io/kimhabork/assets/video/VID_20260213225836.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
+        
         {/* Dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/40" />
-
+        </div>
+        
         {/* Content overlay */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 mx-auto">
           {/**<h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter">
@@ -72,6 +85,24 @@ export default function Home() {
                         className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary"
                       />
                     </Link>
+                    <Link href="https://tiktok.com/@">
+                      <TikTok 
+                        size={24}
+                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary" 
+                      />
+                    </Link>
+                    <Link href="https://www.pinterest.com/kimhab_ork">
+                      <Pinterest
+                        size={24}
+                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary" 
+                      />
+                    </Link>
+                    <Link href="https://www.threads.com/@kimhab_ork">
+                      <Threads
+                        size={24}
+                        className="h-6 w-6 md:h-8 md:w-8 text-white hover:text-primary" 
+                      />
+                    </Link>
                   </div>
                   <div className="flex flex-col justify-between items-center gap-3">
                     <p className="text-white text-sm">
@@ -98,6 +129,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
