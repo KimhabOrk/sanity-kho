@@ -230,7 +230,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <h3 className="font-serif text-xl mb-3">Business Hours</h3>
+                  <h3 className="font-serif text-xl mb-3 text-white">Business Hours</h3>
                   <div className="text-sm md:text-md text-white/80 space-y-2 grid gap-2">
                     <p>Monday - Friday: 9AM - 6PM</p>
                     <p>Saturday: 10AM - 4PM</p>

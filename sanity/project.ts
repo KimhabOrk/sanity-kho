@@ -1,8 +1,8 @@
 import { defineField, defineType, defineArrayMember } from 'sanity'
 
 export default defineType({
-  name: 'lookbook',
-  title: 'Lookbook',
+  name: 'project',
+  title: 'Project',
   type: 'document',
   fields: [
     defineField({
@@ -29,7 +29,7 @@ export default defineType({
     }),
     defineField({
       name: "category",
-      title: "Collection category",
+      title: "Project Category",
       type: "string",
       options: {
         list: [
@@ -51,7 +51,7 @@ export default defineType({
       title: 'Cover Image',
       type: 'imageReference',
       validation: (Rule) => Rule.required(),
-      description: 'Main cover image for the lookbook (featured in grid)',
+      description: 'Main cover image for the project (featured in grid)',
     }),
     defineField({
       name: 'gallery',
@@ -60,7 +60,7 @@ export default defineType({
       of: [
         defineArrayMember({
           type: 'object',
-          name: 'image',
+          name: 'look',
           fields: [
             defineField({
               name: 'id',

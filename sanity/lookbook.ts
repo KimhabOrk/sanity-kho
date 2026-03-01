@@ -60,7 +60,7 @@ export default defineType({
       of: [
         defineArrayMember({
           type: 'object',
-          name: 'image',
+          name: 'look',
           fields: [
             defineField({
               name: 'id',

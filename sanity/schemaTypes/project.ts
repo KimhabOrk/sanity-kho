@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import { defineField, defineType, defineArrayMember } from 'sanity'
 
 export default defineType({
   name: 'project',
@@ -57,8 +57,22 @@ export default defineType({
       name: 'gallery',
       title: 'Gallery Images',
       type: 'array',
-      of: [{ type: 'imageReference' }],
-      description: 'Array of images for the project gallery',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          name: 'image',
+          fields: [
+            defineField({
+              name: 'id',
+              type: 'string',
+            }),
+            defineField({
+              name: 'url',
+              type: 'string',
+            }),
+          ],
+        }),
+      ],
     }),
     defineField({
       name: 'publishedAt',
