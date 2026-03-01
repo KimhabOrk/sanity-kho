@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Mail, PhoneCall } from "lucide-react";
 
 export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -130,7 +131,7 @@ export default function ContactPage() {
                   htmlFor="subject"
                   className="block text-sm font-medium text-white mb-3"
                 >
-                  Subject
+                  Subject *
                 </label>
                 <select
                   id="subject"
@@ -138,7 +139,7 @@ export default function ContactPage() {
                   value={formData.subject}
                   onChange={handleChange}
                   required //
-                  className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
+                  className="w-full px-5 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
                 >
                   <option value="">Select a subject</option>
                   <option value="collaboration">Collaboration Inquiry</option>
@@ -205,30 +206,36 @@ export default function ContactPage() {
                 reach out through the form above.
               </p>
             </div>
-            <div className="space-y-4 text-white/80">
+            <div className="space-y-8 text-white/80">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-12 mx-auto">
                 <div className="flex flex-col gap-4 md:gap-6">
-                  <div>
-                    <p className="text-xs md:text-md uppercase tracking-widest text-gray-400 mb-1">Email</p>
-                    <a href="mailto:info@kimhabork.com" className="hover:text-primary transition-colors">
+                  <div className="flex items-center">
+                    <Mail className="h-5 w-5 md:h-7 md:w-7 mr-2 md:mr-3 text-primary" />
+                    <Link
+                      href="mailto:info@kimhabork.com"
+                      className="text-xs md:text-md tracking-widest text-white/80"
+                    >
                       info@kimhabork.com
-                    </a>
+                    </Link>
                   </div>
-                  <div>
-                    <p className="text-xs md:text-md uppercase tracking-widest text-gray-400 mb-1">Phone</p>
-                    <a href="tel:+123456789" className="hover:text-primary transition-colors">
-                      +855 12 345 678
-                    </a>
+                  <div className="flex items-center">
+                    <PhoneCall className="h-5 w-5 md:h-7 md:w-7 mr-2 md:mr-3 text-primary" />
+                    <Link
+                      href="tel:+85512345678"
+                      className="text-xs md:text-md tracking-widest text-white/80"
+                    >
+                      +855 12 345678
+                    </Link>
                   </div>
                 </div>
-                <div className="flex flex-col mx-auto justify-center items-center">
-                <h3 className="font-serif text-xl mb-3">Business Hours</h3>
-                <div className="text-sm md:text-md text-white/80 space-y-1">
-                  <p>Monday - Friday: 9AM - 6PM</p>
-                  <p>Saturday: 10AM - 4PM</p>
-                  <p>Sunday: Closed</p>
+                <div className="flex flex-col mx-auto">
+                  <h3 className="font-serif text-xl mb-3">Business Hours</h3>
+                  <div className="text-sm md:text-md text-white/80 space-y-2 grid gap-2">
+                    <p>Monday - Friday: 9AM - 6PM</p>
+                    <p>Saturday: 10AM - 4PM</p>
+                    <p>Sunday: Closed</p>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>

@@ -54,7 +54,7 @@ export default function AboutPage() {
         {/* Header */}
         <div className="mb-10 md:mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 uppercase">Kimhab Ork</h1>
-          <p className="text-lg text-white/60">
+          <p className="text-lg text-white/80">
             Fashion designer. Visionary. Creator.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
         {/* Biography Section */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-5 uppercase">Biography</h2>
-          <div className="space-y-6 text-white/80 leading-relaxed uppercase">
+          <div className="space-y-6 text-white/80 leading-relaxed">
             <p>
               Kimhab Ork is a visionary fashion designer, university lecturer, and the founder of the eponymous luxury fashion brand KIMHAB ORK, where he masterfully bridges the artistic innovation and educational mentorship in the dynamic world of fashion. Hailing from Cambodia and armed with a prestigious degree from one of Italy's premier fashion institutions, Kimhab Ork has amassed over a decade of expertise in both the industry and academia, channeling his passion into designs that celebrate cultural heritage while propelling contemporary style forward.
             </p>
@@ -94,7 +94,7 @@ export default function AboutPage() {
         {/* Vision Section */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-5 uppercase">Vision & Mission</h2>
-          <div className="space-y-6 text-white/80 leading-relaxed uppercase">
+          <div className="space-y-6 text-white/80 leading-relaxed">
             <p>
               As a dedicated educator at leading institutions, including his involvement in high-profile events like the Phnom Penh Design Festival, Ork inspires emerging talents to think globally while rooting their creativity in local identity. His workshops, such as "The Alchemist’s Atelier: From Spark to Fashion Story," emphasize experiential learning, guiding participants through the alchemical process of transforming ideas into wearable art. Ork's teaching ethos revolves around hands-on mastery of essential techniques—from conceptual illustration and precise pattern-making to advanced sewing, draping, and innovative textile manipulation—while encouraging students to cultivate their distinctive voices in an industry ripe for reinvention.
             </p>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <p>
               Her approach emphasizes:
             </p>
-            <ul className="list-disc list-inside list-primary space-y-3 ml-3 marker:text-primary">
+            <ul className="list-disc list-inside space-y-3 ml-1 md:ml-4 marker:text-primary">
               <li><span className="text-white">Precision Craftsmanship:</span> Meticulous attention to construction and material quality</li>
               <li><span className="text-white">Conceptual Depth:</span> Collections grounded in meaningful narratives and artistic concepts</li>
               <li><span className="text-white">Innovation:</span> Continuous exploration of new techniques and materials</li>
@@ -139,7 +139,7 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-16">Journey</h2>
           <div className="space-y-12">
             {timeline.map((item, index) => (
-              <div key={index} className="flex gap-4 md:gap-6 group">
+              <div key={index} className="flex gap-2 md:gap-6 group">
                 <div className="flex-shrink-0 w-20 md:w-24">
                   <p className="text-xl md:text-2xl font-medium text-primary">{item.year}</p>
                 </div>
@@ -175,19 +175,19 @@ export default function AboutPage() {
                 </p>
               </blockquote>
 
-              <div className="mt-8 pt-8 border-t border-border">
+              <div className="mt-4 pt-4 border-t border-border">
                 <p className="font-semibold text-foreground">KIMHAB ORK</p>
                 <p className="text-foreground/70">Creative Director & Founder, Kimhab ORK Co., Ltd</p>
               </div>
+              <div className="absolute bottom-2 right-2 z-20">
+                <Image 
+                  src="/signature.png" 
+                  width={64} 
+                  height={17} 
+                  alt="Signature" 
+                  className="w-full object-cover" 
+                />
             </div>
-            <div className="absolute bottom-4 right-3">
-              <Image 
-                sr="/signature.png" 
-                width={64} 
-                height={17} 
-                alt="Signature" 
-                className="w-full object-cover" 
-              />
             </div>
           </div>
         </section>
