@@ -63,7 +63,7 @@ export function Footer() {
             </Link>
           </div>
           <div className="flex flex-col justify-between items-center gap-4">
-            <div className="flex justify-center items-center mx-auto gap-4">
+            {/** <div className="flex justify-center items-center mx-auto gap-4">
               <Link 
                 href="https://gallery.kimhabork.site/art"
                 className="text-white/60 hover:text-white text-sm transition-colors"
@@ -76,7 +76,7 @@ export function Footer() {
               >
                 Runway Gallery
               </Link>
-            </div>
+            </div> **/}
             <p className="text-white/60 text-sm">
               &copy; {currentYear} Kimhab Ork. All rights reserved.
             </p>

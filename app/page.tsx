@@ -122,7 +122,7 @@ export default function Home() {
                     </Link>
                   </div>
                   <div className="flex flex-col justify-between items-center gap-3">
-                    <div className="flex justify-center items-center mx-auto gap-4">
+                    {/** <div className="flex justify-center items-center mx-auto gap-4">
                       <Link
                         href="/lhttps://gallery.kimhabork.site/art"
                         className="text-white/80 hover:text-white text-sm transition-colors"
@@ -135,7 +135,7 @@ export default function Home() {
                       >
                         Runway Gallery
                       </Link>
-                    </div>
+                    </div> **/}
                     <p className="text-white/80 text-sm md:text-md">
                       &copy; {currentYear} Kimhab Ork. All rights reserved.
                     </p>

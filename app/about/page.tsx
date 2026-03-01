@@ -175,13 +175,13 @@ export default function AboutPage() {
                 <p className="font-semibold text-foreground">KIMHAB ORK</p>
                 <p className="text-foreground/70">Creative Director & Founder, Kimhab ORK Co., Ltd</p>
               </div>
-              <div className="absolute bottom-2 right-1">
+              <div className="absolute bottom-2 right-2">
                 <Image 
                   src="/signature.png" 
                   width={32} 
                   height={8.5} 
                   alt="Signature" 
-                  className="w-[32px] h-full md:w-[48px] object-cover" 
+                  className="w-[98px] h-full md:w-[112px] object-cover" 
                 />
               </div>
             </div>
