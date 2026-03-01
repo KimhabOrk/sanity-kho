@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "portfolio": {
+      "development": {
+        "fallback": "www.kimhabork.com"
+      }
+    }
+  }
+}

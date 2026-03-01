@@ -6,6 +6,47 @@ export const metadata: Metadata = {
   description: 'Learn about Kimhab Ork, a visionary fashion designer blending artistry with commercial excellence.',
 }
 
+const timeline = [
+  {
+    year: "2022",
+    title: "Foundation Lecturer",
+    description: "Employed as a foundation of art & design professor at Limkokwing University.",
+  },
+  {
+    year: "2021",
+    title: "Fashion Lecturer",
+    description: "Get appointed as a fashion professor at Phnom Penh University of The Arts.",
+  },
+  {
+    year: "2018",
+    title: "Fashion Coach",
+    description: "Get assigned to be a fashion coach at Pedro.",
+  },
+  {
+    year: "2017",
+    title: "Lead Fashion Designer",
+    description:
+      "Directly employed as a lead designer at a manufacturer that produces products for Adidas, Gap and Joe Fresh.",
+  },
+  {
+    year: "2017",
+    title: "Bachelor in Fashion Design",
+    description:
+      "Completed European Bachelor of Science in Design, Fashion from Accademia Italiana Florence, Italy",
+  },
+  {
+    year: "2014",
+    title: "Foundation of Business and Marketing",
+    description:
+      "Completed a foundation course in Business and Marketing at SSTC Institute, Singapore.",
+  },
+  {
+    year: "2013",
+    title: "General English Certificate",
+    description: "General English at SSTC Institute, Singapore.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black py-20 px-4 md:px-6 lg:px-8">
@@ -32,7 +73,7 @@ export default function AboutPage() {
         </section>
         {/* Biography Section */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Biography</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-6">Biography</h2>
           <div className="space-y-6 text-white/80 leading-relaxed">
             <p>
               Kimhab Ork is a visionary fashion designer who seamlessly blends artistic expression with commercial viability. With a passion for pushing creative boundaries and a deep understanding of market dynamics, Kimhab has established herself as a prominent figure in contemporary fashion.
@@ -45,7 +86,27 @@ export default function AboutPage() {
             </p>
           </div>
         </section>
-
+        
+        { /* Timeline */ }
+      <section className="mb-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-16">Journey</h2>
+          <div className="space-y-12">
+            {timeline.map((item, index) => (
+              <div key={index} className="flex gap-4 md:gap-6 group">
+                <div className="flex-shrink-0 w-20 md:w-24">
+                  <p className="text-2xl md:text-3xl font-medium text-primary">{item.year}</p>
+                </div>
+                <div className="flex-grow border-l-2 border-border group-hover:border-primary transition-colors pl-6 pb-8">
+                  <h3 className="text-xl md:text-3xl font-medium mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
         {/* Philosophy Section */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Design Philosophy</h2>
@@ -56,7 +117,7 @@ export default function AboutPage() {
             <p>
               Her approach emphasizes:
             </p>
-            <ul className="list-disc list-inside list-primary space-y-3 ml-3">
+            <ul className="list-disc list-inside list-primary space-y-3 ml-3 marker:text-primary">
               <li><span className="text-white">Precision Craftsmanship:</span> Meticulous attention to construction and material quality</li>
               <li><span className="text-white">Conceptual Depth:</span> Collections grounded in meaningful narratives and artistic concepts</li>
               <li><span className="text-white">Innovation:</span> Continuous exploration of new techniques and materials</li>
