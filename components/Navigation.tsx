@@ -43,7 +43,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
             className="flex items-center h-full py-1"
           >
              <Image 
-                src="https://kimhabork.site/logo-dark.png"
+                src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
                 width={128}
                 height={34}
                 priority
