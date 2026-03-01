@@ -7,45 +7,41 @@ export const metadata: Metadata = {
 }
 
 const timeline = [
-  {
-    year: "2022",
-    title: "Foundation Lecturer",
-    description: "Employed as a foundation of art & design professor at Limkokwing University.",
-  },
-  {
-    year: "2021",
-    title: "Fashion Lecturer",
-    description: "Get appointed as a fashion professor at Phnom Penh University of The Arts.",
-  },
-  {
-    year: "2018",
-    title: "Fashion Coach",
-    description: "Get assigned to be a fashion coach at Pedro.",
-  },
-  {
-    year: "2017",
-    title: "Lead Fashion Designer",
-    description:
-      "Directly employed as a lead designer at a manufacturer that produces products for Adidas, Gap and Joe Fresh.",
-  },
-  {
-    year: "2017",
-    title: "Bachelor in Fashion Design",
-    description:
-      "Completed European Bachelor of Science in Design, Fashion from Accademia Italiana Florence, Italy",
-  },
-  {
-    year: "2014",
-    title: "Foundation of Business and Marketing",
-    description:
-      "Completed a foundation course in Business and Marketing at SSTC Institute, Singapore.",
-  },
-  {
-    year: "2013",
-    title: "General English Certificate",
-    description: "General English at SSTC Institute, Singapore.",
-  },
-];
+{
+  year: "2022",
+  title: "Foundation Lecturer",
+  description: "Employed as a foundation of art & design professor at Limkokwing University.",
+},
+{
+  year: "2021",
+  title: "Fashion Lecturer",
+  description: "Get appointed as a fashion professor at Phnom Penh University of The Arts.",
+},
+{
+  year: "2018",
+  title: "Fashion Coach",
+  description: "Get assigned to be a fashion coach at Pedro.",
+},
+{
+  year: "2017",
+  title: "Lead Fashion Designer",
+  description: "Directly employed as a lead designer at a manufacturer that produces products for Adidas, Gap and Joe Fresh.",
+},
+{
+  year: "2017",
+  title: "Bachelor in Fashion Design",
+  description: "Completed European Bachelor of Science in Design, Fashion from Accademia Italiana Florence, Italy",
+},
+{
+  year: "2014",
+  title: "Foundation of Business and Marketing",
+  description: "Completed a foundation course in Business and Marketing at SSTC Institute, Singapore.",
+},
+{
+  year: "2013",
+  title: "General English Certificate",
+  description: "General English at SSTC Institute, Singapore.",
+}, ];
 
 export default function AboutPage() {
   return (
@@ -120,7 +116,7 @@ export default function AboutPage() {
             <p>
               Her approach emphasizes:
             </p>
-            <ul className="list-disc list-inside space-y-3 ml-1 md:ml-4 marker:text-primary">
+            <ul className="list-disc list-inside space-y-3 ml-1 md:ml-4 list-primary">
               <li><span className="text-white">Precision Craftsmanship:</span> Meticulous attention to construction and material quality</li>
               <li><span className="text-white">Conceptual Depth:</span> Collections grounded in meaningful narratives and artistic concepts</li>
               <li><span className="text-white">Innovation:</span> Continuous exploration of new techniques and materials</li>
@@ -139,7 +135,7 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-16">Journey</h2>
           <div className="space-y-12">
             {timeline.map((item, index) => (
-              <div key={index} className="flex gap-2 md:gap-6 group">
+              <div key={index} className="flex gap-4 md:gap-6 group">
                 <div className="flex-shrink-0 w-20 md:w-24">
                   <p className="text-xl md:text-2xl font-medium text-primary">{item.year}</p>
                 </div>
@@ -156,7 +152,7 @@ export default function AboutPage() {
 
         <section className="mb-16 bg-background">
           <div className="mx-auto max-w-4xl">
-            <div className="bg-muted border border-border p-6 md:p-10 rounded-lg">
+            <div className="relative bg-muted border border-border p-6 md:p-10 rounded-lg">
               <h2 className="font-playfair text-2xl md:text-3xl font-bold text-foreground mb-5">
                 A Word from KIMHAB
               </h2>
@@ -179,15 +175,15 @@ export default function AboutPage() {
                 <p className="font-semibold text-foreground">KIMHAB ORK</p>
                 <p className="text-foreground/70">Creative Director & Founder, Kimhab ORK Co., Ltd</p>
               </div>
-              <div className="absolute bottom-2 right-2 z-20">
+              <div className="absolute bottom-2 right-2">
                 <Image 
                   src="/signature.png" 
-                  width={64} 
-                  height={17} 
+                  width={32} 
+                  height={8.5} 
                   alt="Signature" 
                   className="w-full object-cover" 
                 />
-            </div>
+              </div>
             </div>
           </div>
         </section>

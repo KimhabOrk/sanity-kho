@@ -207,14 +207,14 @@ export default function ContactPage() {
                 reach out through the form above.
               </p>
             </div>
-            <div className="space-y-8 text-white/80">
+            <div className="space-y-8 mt-6 md:mt-8 text-white/80">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-12 mx-auto">
                 <div className="flex flex-col gap-4 md:gap-6">
                   <div className="flex items-center">
                     <Mail className="h-5 w-5 md:h-7 md:w-7 mr-2 md:mr-3 text-primary" />
                     <Link
                       href="mailto:info@kimhabork.com"
-                      className="text-xs md:text-md tracking-widest text-white/80"
+                      className="text-sm md:text-md tracking-widest text-white/80"
                     >
                       info@kimhabork.com
                     </Link>
@@ -223,13 +223,13 @@ export default function ContactPage() {
                     <PhoneCall className="h-5 w-5 md:h-7 md:w-7 mr-2 md:mr-3 text-primary" />
                     <Link
                       href="tel:+85512345678"
-                      className="text-xs md:text-md tracking-widest text-white/80"
+                      className="text-sm md:text-md tracking-widest text-white/80"
                     >
                       +855 12 345678
                     </Link>
                   </div>
                 </div>
-                <div className="flex flex-col mx-auto">
+                <div className="flex flex-col">
                   <h3 className="font-serif text-xl mb-3">Business Hours</h3>
                   <div className="text-sm md:text-md text-white/80 space-y-2 grid gap-2">
                     <p>Monday - Friday: 9AM - 6PM</p>
