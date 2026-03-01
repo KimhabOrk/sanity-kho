@@ -15,6 +15,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@sanity/cli": "^3.0.0",
+    "@sanity/dashboard": "^5.0.1",
     "@sanity/vision": "^3.0.0",
     "@vercel/analytics": "1.6.1",
     "next-sanity": "^8.0.0",
