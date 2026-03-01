@@ -116,7 +116,7 @@ export default function AboutPage() {
             <p>
               Her approach emphasizes:
             </p>
-            <ul className="list-disc list-inside space-y-3 ml-1 md:ml-4 list-primary">
+            <ul className="list-disc list-inside space-y-3 ml-1 md:ml-4 list-primary marker:text-primary">
               <li><span className="text-white">Precision Craftsmanship:</span> Meticulous attention to construction and material quality</li>
               <li><span className="text-white">Conceptual Depth:</span> Collections grounded in meaningful narratives and artistic concepts</li>
               <li><span className="text-white">Innovation:</span> Continuous exploration of new techniques and materials</li>
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
         <section className="mb-16 bg-background">
           <div className="mx-auto max-w-4xl">
-            <div className="relative bg-muted border border-border p-6 md:p-10 rounded-lg">
+            <div className="relative bg-muted border border-border/40 p-6 md:p-10 rounded-lg">
               <h2 className="font-playfair text-2xl md:text-3xl font-bold text-foreground mb-5">
                 A Word from KIMHAB
               </h2>
@@ -171,17 +171,17 @@ export default function AboutPage() {
                 </p>
               </blockquote>
 
-              <div className="mt-4 pt-4 border-t border-border">
+              <div className="mt-4 pt-4 mb-6 pb-6 border-t border-border">
                 <p className="font-semibold text-foreground">KIMHAB ORK</p>
                 <p className="text-foreground/70">Creative Director & Founder, Kimhab ORK Co., Ltd</p>
               </div>
-              <div className="absolute bottom-2 right-2">
+              <div className="absolute bottom-2 right-1">
                 <Image 
                   src="/signature.png" 
                   width={32} 
                   height={8.5} 
                   alt="Signature" 
-                  className="w-full object-cover" 
+                  className="w-[32px] h-full md:w-[48px] object-cover" 
                 />
               </div>
             </div>

@@ -80,7 +80,7 @@ export default function ContactPage() {
 
         {/* Form */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gray-700/90 px-5 md:px-8 py-7 md:py-10 rounded-xl">
+          <div className="bg-muted px-4 md:px-8 py-7 md:py-10 rounded-xl">
             <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6 md:mb-8">
               Send Us A Message
             </h2>
@@ -101,7 +101,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
+                  className="w-full px-3 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
                   placeholder="Your name"
                 />
               </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
+                  className="w-full px-3 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                   value={formData.subject}
                   onChange={handleChange}
                   required //
-                  className="w-full px-5 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
+                  className="w-full px-3 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
                 >
                   <option value="">Select a subject</option>
                   <option value="collaboration">Collaboration Inquiry</option>
@@ -166,7 +166,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors resize-none"
+                  className="w-full px-3 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors resize-none"
                   placeholder="Your message here..."
                 />
               </div>

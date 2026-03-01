@@ -53,7 +53,7 @@ export default function Home() {
           {/**<h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tighter">
           Kimhab Ork
         </h1>**/}
-          <div className="flex flex-col w-full justify-center items-center mx-auto px-2 md:px-6">
+          <div className="flex flex-col w-full justify-center items-center mx-auto px-2 md:px-6 pb-6">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
               width={800}
@@ -123,19 +123,19 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col justify-between items-center gap-3">
                     <div className="flex justify-center items-center mx-auto gap-4">
-              <Link 
-                href="/lhttps://gallery.kimhabork.site/art"
-                className="text-white/60 hover:text-white text-sm transition-colors"
-              >
-                Art Gallery
-              </Link>
-              <Link 
-                href="https://gallery.kimhabork.site/"
-                className="text-white/60 hover:text-white text-sm transition-colors"
-              >
-                Runway Gallery
-              </Link>
-            </div>
+                      <Link
+                        href="/lhttps://gallery.kimhabork.site/art"
+                        className="text-white/80 hover:text-white text-sm transition-colors"
+                      >
+                        Art Gallery
+                      </Link>
+                      <Link
+                        href="https://gallery.kimhabork.site/"
+                        className="text-white/80 hover:text-white text-sm transition-colors"
+                      >
+                        Runway Gallery
+                      </Link>
+                    </div>
                     <p className="text-white/80 text-sm md:text-md">
                       &copy; {currentYear} Kimhab Ork. All rights reserved.
                     </p>

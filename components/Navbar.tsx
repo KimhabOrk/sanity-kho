@@ -51,11 +51,11 @@ export function Navbar() {
             <Link href="/" className="flex items-center h-full py-1">
               <Image 
                 src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
-                width={128}
-                height={34}
+                width={168}
+                height={38}
                 priority
                 alt="logo"
-                className="h-[34px] w-full md:h-[40px] object-cover" 
+                className="h-[38px] w-full md:h-[44px] object-cover" 
               />
             </Link>
 
