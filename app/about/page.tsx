@@ -152,7 +152,7 @@ export default function AboutPage() {
 
         <section className="mb-16 bg-background">
           <div className="mx-auto max-w-4xl">
-            <div className="relative bg-muted border border-border/40 p-6 md:p-10 rounded-lg">
+            <div className="relative bg-muted border border-border mt-2 p-6 md:p-10 rounded-lg">
               <h2 className="font-playfair text-2xl md:text-3xl font-bold text-foreground mb-5">
                 A Word from KIMHAB
               </h2>
