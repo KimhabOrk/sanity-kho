@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "extract": "npx sanity schema extract",
+    "deploy": "npx sanity schema deploy --manifest-dir public/studio/static",
     "lint": "eslint .",
-    "seed": "ts-node scripts/seed-sanity.ts"
+    "seed": "ts-node scripts/seed-sanity.ts",
+    "typegen": "npx sanity schema extract --path=dist/static/create-manifest.json && npx sanity typegen generate"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
