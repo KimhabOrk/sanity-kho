@@ -8,9 +8,15 @@
     },
     "gallery": {
       "routing": [
-      {
-        "paths": ["/art", "/brand", "/collection"]
-      }]
+        {
+          "paths": [
+            "/",
+            "/art",
+            "/brand",
+            "/collection"
+          ]
+        }
+      ]
     }
   }
 }
