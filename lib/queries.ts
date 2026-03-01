@@ -1,4 +1,6 @@
-export const projectsQuery = `*[_type == "project"] | order(publishedAt desc) {
+import { groq } from 'next-sanity'
+
+export const projectsQuery = groq`*[_type == "project"] | order(publishedAt desc) {
   _id,
   title,
   slug,
@@ -16,49 +18,7 @@ export const projectsQuery = `*[_type == "project"] | order(publishedAt desc) {
   }
 }`
 
-export const projectBySlugQuery = `*[_type == "project" && slug.current == $slug][0] {
-  _id,
-  title,
-  slug,
-  category,
-  description,
-  publishedAt,
-  image {
-    url,
-    alt,
-    caption
-  },
-  gallery[] {
-    url,
-    alt,
-    caption
-  },
-  season->{
-    _id,
-    name,
-    slug
-  }
-}`
-
-export const lookbooksQuery = `*[_type == "lookbook"] | order(publishedAt desc) {
-  _id,
-  title,
-  slug,
-  category,
-  description,
-  publishedAt,
-  image {
-    url,
-    alt,
-    caption
-  },
-  season->{
-    name,
-    slug
-  }
-}`
-
-export const lookbookBySlugQuery = `*[_type == "lookbook" && slug.current == $slug][0] {
+export const projectBySlugQuery = groq`*[_type == "project" && slug.current == $slug][0] {
   _id,
   title,
   slug,
@@ -82,19 +42,61 @@ export const lookbookBySlugQuery = `*[_type == "lookbook" && slug.current == $sl
   }
 }`
 
-export const seasonsQuery = `*[_type == "season"] | order(name) {
+export const lookbooksQuery = groq`*[_type == "lookbook"] | order(publishedAt desc) {
+  _id,
+  title,
+  slug,
+  category,
+  description,
+  publishedAt,
+  image {
+    url,
+    alt,
+    caption
+  },
+  season->{
+    name,
+    slug
+  }
+}`
+
+export const lookbookBySlugQuery = groq`*[_type == "lookbook" && slug.current == $slug][0] {
+  _id,
+  title,
+  slug,
+  category,
+  description,
+  publishedAt,
+  image {
+    url,
+    alt,
+    caption
+  },
+  gallery[] {
+    url,
+    alt,
+    caption
+  },
+  season->{
+    _id,
+    name,
+    slug
+  }
+}`
+
+export const seasonsQuery = groq`*[_type == "season"] | order(name) {
   _id,
   name,
   slug
 }`
 
-export const projectSlugsQuery = `*[_type == "project"] {
+export const projectSlugsQuery = groq`*[_type == "project"] {
   "params": {
     "slug": slug.current
   }
 }`
 
-export const lookbookSlugsQuery = `*[_type == "lookbook"] {
+export const lookbookSlugsQuery = groq`*[_type == "lookbook"] {
   "params": {
     "slug": slug.current
   }

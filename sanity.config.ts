@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import schemas from './sanity/schemaTypes'
+import { dashboardTool } from "@sanity/dashboard"
 
 export default defineConfig({
   name: 'default',
@@ -21,6 +22,7 @@ export default defineConfig({
           ]),
     }),
     visionTool(),
+    dashboardTool({ widgets: []}),
   ],
   schema: {
     types: schemas,
