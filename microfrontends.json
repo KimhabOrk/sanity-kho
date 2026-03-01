@@ -5,6 +5,14 @@
       "development": {
         "fallback": "www.kimhabork.com"
       }
+    },
+    {
+      "gallery": {
+        "routing": [
+        {
+          "paths": ["/art", "/brand", "/collection"]
+        }]
+      }
     }
   }
 }
