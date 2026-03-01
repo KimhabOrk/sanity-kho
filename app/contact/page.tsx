@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Mail, PhoneCall } from "lucide-react";
+import Link from "next/link"
 
 export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
