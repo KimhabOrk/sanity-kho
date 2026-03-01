@@ -132,16 +132,21 @@ export default function ContactPage() {
                 >
                   Subject
                 </label>
-                <input
-                  type="text"
+                <select
                   id="subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  required
+                  required //
                   className="w-full px-4 py-3 bg-white/5 border border-white/40 text-white placeholder-white/40 focus:border-white/30 focus:outline-none transition-colors"
-                  placeholder="What's this about?"
-                />
+                >
+                  <option value="">Select a subject</option>
+                  <option value="collaboration">Collaboration Inquiry</option>
+                  <option value="press">Press & Media</option>
+                  <option value="wholesale">Business</option>
+                  <option value="custom">Private Appointment</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
 
               {/* Message Field */}
@@ -199,6 +204,32 @@ export default function ContactPage() {
                 For press inquiries and collaboration opportunities, please
                 reach out through the form above.
               </p>
+            </div>
+            <div className="space-y-4 text-white/80">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-12 mx-auto">
+                <div className="flex flex-col gap-4 md:gap-6">
+                  <div>
+                    <p className="text-xs md:text-md uppercase tracking-widest text-gray-400 mb-1">Email</p>
+                    <a href="mailto:info@kimhabork.com" className="hover:text-primary transition-colors">
+                      info@kimhabork.com
+                    </a>
+                  </div>
+                  <div>
+                    <p className="text-xs md:text-md uppercase tracking-widest text-gray-400 mb-1">Phone</p>
+                    <a href="tel:+123456789" className="hover:text-primary transition-colors">
+                      +855 12 345 678
+                    </a>
+                  </div>
+                </div>
+                <div className="flex flex-col mx-auto justify-center items-center">
+                <h3 className="font-serif text-xl mb-3">Business Hours</h3>
+                <div className="text-sm md:text-md text-white/80 space-y-1">
+                  <p>Monday - Friday: 9AM - 6PM</p>
+                  <p>Saturday: 10AM - 4PM</p>
+                  <p>Sunday: Closed</p>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>

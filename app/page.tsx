@@ -18,7 +18,7 @@ export default function Home() {
             muted
             loop
             playsInline
-            className="w-full h-screen object-cover md:hidden lg:hidden"
+            className="w-screen h-screen object-cover md:hidden lg:hidden"
             poster="https://ik.imagekit.io/kimhabork/assets/poster-mobile.jpg?updatedAt=1772289204429"
           >
             <source
@@ -33,7 +33,7 @@ export default function Home() {
             muted
             loop
             playsInline
-            className="w-full h-screen object-cover hidden md:block lg:block"
+            className="w-screen h-screen object-cover hidden md:block lg:block"
             poster="https://ik.imagekit.io/kimhabork/assets/poster-desktop.jpeg?updatedAt=1772289275320"
           >
             <source
@@ -62,7 +62,7 @@ export default function Home() {
               alt="logo"
               className="h-full w-full object-cover mb-3 md:mb-8"
             />
-            <p className="text-lg md:text-2xl lg:text-3xl text-white uppercase max-w-6xl mb-3 md:mb-8">
+            <p className="text-lg md:text-2xl lg:text-3xl text-white uppercase max-w-6xl mb-6 md:mb-12">
               Blending Artistry with Commercial Excellence
             </p>
           </div>
@@ -122,6 +122,20 @@ export default function Home() {
                     </Link>
                   </div>
                   <div className="flex flex-col justify-between items-center gap-3">
+                    <div className="flex justify-center items-center mx-auto gap-4">
+              <Link 
+                href="/lhttps://gallery.kimhabork.site/art"
+                className="text-white/60 hover:text-white text-sm transition-colors"
+              >
+                Art Gallery
+              </Link>
+              <Link 
+                href="https://gallery.kimhabork.site/"
+                className="text-white/60 hover:text-white text-sm transition-colors"
+              >
+                Runway Gallery
+              </Link>
+            </div>
                     <p className="text-white/80 text-sm md:text-md">
                       &copy; {currentYear} Kimhab Ork. All rights reserved.
                     </p>
