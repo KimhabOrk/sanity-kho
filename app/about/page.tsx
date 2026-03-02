@@ -114,7 +114,7 @@ export default function AboutPage() {
               Kimhab's design philosophy is rooted in the belief that fashion should be both intellectually stimulating and commercially relevant. She views each collection as a dialogue between artistic vision and practical wearability, creating pieces that resonate with both critics and consumers.
             </p>
             <p>
-              Her approach emphasizes:
+              His approach emphasizes:
             </p>
             <ul className="list-disc list-inside space-y-3 ml-1 md:ml-4 list-primary marker:text-primary">
               <li><span className="text-white">Precision Craftsmanship:</span> Meticulous attention to construction and material quality</li>
@@ -178,10 +178,10 @@ export default function AboutPage() {
               <div className="absolute bottom-2 right-2">
                 <Image 
                   src="/signature.png" 
-                  width={98} 
-                  height={26} 
+                  width={128} 
+                  height={34} 
                   alt="Signature" 
-                  className="w-[98px] h-full md:w-[112px] object-cover" 
+                  className="w-[128px] h-auto md:w-[152px] object-cover" 
                 />
               </div>
             </div>
