@@ -45,7 +45,7 @@ export function Navbar() {
       
       {/* Content */}
       <div className="relative">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div className="max-w-screen mx-auto px-4 md:px-6 lg:px-8">
           <div className="flex justify-between items-center h-14">
             {/* Logo */}
             <Link href="/" className="flex items-center h-full py-1">
@@ -55,7 +55,7 @@ export function Navbar() {
                 height={38}
                 priority
                 alt="logo"
-                className="h-[38px] w-full md:h-[44px] object-cover" 
+                className="h-auto w-[168px] md:w-[188px] object-cover" 
               />
             </Link>
 

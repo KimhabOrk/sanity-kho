@@ -35,7 +35,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${getNavbarClasses()}`}>
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-screen mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14">
           {/* Logo */}
           <Link 
@@ -48,7 +48,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
                 height={38}
                 priority
                 alt="logo"
-                className="h-[38px] w-full md:h-[44px] object-cover" 
+                className="w-[168px] h-auto md:w-[188px] object-cover" 
               />
           </Link>
 

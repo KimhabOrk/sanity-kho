@@ -178,10 +178,10 @@ export default function AboutPage() {
               <div className="absolute bottom-2 right-2">
                 <Image 
                   src="/signature.png" 
-                  width={128} 
-                  height={34} 
+                  width={138} 
+                  height={36} 
                   alt="Signature" 
-                  className="w-[128px] h-auto md:w-[152px] object-cover" 
+                  className="w-[138px] h-auto md:w-[158px] object-cover" 
                 />
               </div>
             </div>
